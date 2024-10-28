@@ -1,0 +1,146 @@
+.payment-method-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #d0e3e9, #f0f4f8);
+  position: relative;
+  padding: 20px;
+}
+
+.inner-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.account-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.account-option {
+  padding: 12px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.account-option.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.jazzcash-form, .easypaisa-form, .bank-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.save-button, .next-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.next-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.save-button:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}
+
+.back-button {
+  position: fixed; 
+  bottom: 20px;
+  left: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000; 
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.02);
+}

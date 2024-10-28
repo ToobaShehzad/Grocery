@@ -1,0 +1,267 @@
+/* Main container styling */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #d0e3e9;
+    padding: 20px;
+    position: relative;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 80px; 
+    height: 100%; 
+    background-color: #02548a;
+    color: #ffffff;
+    padding: 20px;
+    transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #95abc0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar ul li:hover {
+    background-color: #f0f5f9;
+    color: #ffffff;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+.sidebar ul li.active {
+    background-color: #008CBA;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar ul li i {
+    margin-right: 15px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Content area styling */
+.content {
+    margin-left: 80px; 
+    padding: 20px;
+    width: 100%;
+}
+
+/* Store info container */
+.store-info-container {
+    text-align: center;
+    background-color: #e2e9eb;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 10px #0000001a;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Sales info container */
+.sales-info-container {
+    text-align: left;
+    background-color: #e2e9eb;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Profile picture container */
+.profile-pic-container {
+    position: relative;
+    display: inline-block;
+    width: 800px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: -35px;
+}
+
+/* Store image */
+.store-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Placeholder text */
+.placeholder-text {
+    color: #7f8c8d;
+    font-size: 16px;
+    text-align: center;
+    line-height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+/* Sales amount text */
+.sales-amount {
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Progress bar container */
+.progress-bar-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 20px;
+    width: 50%;
+    position: relative;
+}
+
+/* Progress bar */
+.progress-bar {
+    background-color: #3498db;
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.3s;
+}
+
+/* Billing details container */
+.billing-details-container {
+    text-align: center;
+    background-color: #e2e9eb;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Billing history container */
+.billing-history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    align-items: center;
+  
+}
+
+/* Individual billing card */
+.bill-card {
+    background-color: #e4f5b9;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Card hover effect */
+.bill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Card date */
+.bill-date {
+    color: #6c757d;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* Card info */
+.bill-info {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Card name */
+.bill-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Card customer and payment */
+.bill-customer, .bill-payment {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Card status */
+.bill-status {
+    background-color: #bcce21;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 10px;
+    margin-left: 600px;
+   
+}
+
+/* Search input styling */
+.search-input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}

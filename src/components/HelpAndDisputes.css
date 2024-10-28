@@ -1,0 +1,52 @@
+.help-and-disputes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f7f8;
+  gap: 20px; /* Add some gap between the sections */
+}
+
+.help-center h2,
+.dispute-management h2,
+.dispute-management h3 {
+  text-align: center;
+}
+.help-center
+{
+  background-color: #46b0f7;
+  padding: 0%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+}
+.dispute-management {
+  background-color: #d8e8f5;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust the width as needed */
+}
+
+.dispute-form, .dispute-tracking, .dispute-history {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dispute-history ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.dispute-history li {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+
